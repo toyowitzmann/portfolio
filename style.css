@@ -116,3 +116,24 @@ footer {
         flex-direction: column;
     }
 }
+/* Styling for the new button group */
+.button-group {
+    display: flex; /* Makes the buttons sit side-by-side */
+    gap: 15px; /* Adds space between the buttons */
+    justify-content: center; /* Centers the whole group */
+    margin-top: 20px;
+}
+
+/* Make buttons a bit smaller so four fit nicely */
+.cta-button {
+    /* Keep existing styles, but adjust padding */
+    padding: 10px 20px;
+    font-size: 0.9em;
+}
+
+/* Optional: Improve responsiveness for small screens */
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column; /* Stacks buttons on top of each other on tiny screens */
+    }
+}
